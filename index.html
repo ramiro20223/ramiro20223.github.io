@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramiro Rodrigues | Soluções Modernas</title>
+    <meta name="description" content="Transforme sua presença digital com a Nexus.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Ramiro<span>Rodrigues</span></a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link">Início</a></li>
+                    <li><a href="#features" class="nav__link">Benefícios</a></li>
+                    <li><a href="#gallery" class="nav__link">Portfólio</a></li>
+                    <li><a href="#contact" class="nav__link">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-button" aria-label="Alternar tema">
+                    <i class="ri-moon-line"></i>
+                </button>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero section" id="home">
+            <div class="hero__container container grid">
+                <div class="hero__data">
+                    <h1 class="hero__title">Construa o futuro <br> da sua marca.</h1>
+                    <p class="hero__description">
+                        Desenvolvemos interfaces de alta performance que conectam o seu negócio ao público certo. Design limpo, código sólido.
+                    </p>
+                    <form class="hero__form" id="hero-form">
+                        <input type="email" placeholder="Seu melhor e-mail" class="hero__input" required>
+                        <button type="submit" class="button">Começar agora</button>
+                    </form>
+                </div>
+                <div class="hero__image">
+                    <div class="hero__blob">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=500" alt="Dashboard Moderno">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features section" id="features">
+            <h2 class="section__title">Nossos Benefícios</h2>
+            <div class="features__container container grid">
+                <div class="feature__card reveal">
+                    <i class="ri-rocket-line feature__icon"></i>
+                    <h3 class="feature__title">Alta Performance</h3>
+                    <p class="feature__description">Sites otimizados para carregar em menos de 2 segundos.</p>
+                </div>
+                <div class="feature__card reveal">
+                    <i class="ri-layout-masonry-line feature__icon"></i>
+                    <h3 class="feature__title">Design Responsivo</h3>
+                    <p class="feature__description">Sua página perfeita em qualquer tamanho de tela.</p>
+                </div>
+                <div class="feature__card reveal">
+                    <i class="ri-shield-check-line feature__icon"></i>
+                    <h3 class="feature__title">Código Limpo</h3>
+                    <p class="feature__description">Escalabilidade e fácil manutenção para o seu projeto.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery section" id="gallery">
+            <h2 class="section__title">Projetos em Destaque</h2>
+            <div class="gallery__container container grid">
+                <div class="gallery__item reveal">
+                    <img src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?auto=format&fit=crop&q=80&w=400" alt="Projeto 1">
+                    <div class="gallery__overlay"><span>Visual Identity</span></div>
+                </div>
+                <div class="gallery__item reveal">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=400" alt="Projeto 2">
+                    <div class="gallery__overlay"><span>Web App</span></div>
+                </div>
+                <div class="gallery__item reveal">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400" alt="Projeto 3">
+                    <div class="gallery__overlay"><span>Backend Systems</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Vamos Conversar?</h2>
+            <div class="contact__container container grid">
+                <div class="contact__info">
+                    <h3 class="contact__subtitle">Informações de Contato</h3>
+                    <div class="contact__item">
+                        <i class="ri-mail-line"></i>
+                        <span>contato@ramirodigital.com</span>
+                    </div>
+                    <div class="contact__item">
+                        <i class="ri-whatsapp-line"></i>
+                        <span>+55 (85) 99999-9999</span>
+                    </div>
+                </div>
+
+                <form class="contact__form" id="contact-form">
+                    <div class="form__group">
+                        <input type="text" name="name" class="form__input" placeholder=" " id="name" required>
+                        <label for="name" class="form__label">Nome Completo</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" name="email" class="form__input" placeholder=" " id="email" required>
+                        <label for="email" class="form__label">E-mail Profissional</label>
+                    </div>
+                    <div class="form__group">
+                        <textarea name="message" class="form__input form__area" placeholder=" " id="message" required></textarea>
+                        <label for="message" class="form__label">Como podemos ajudar?</label>
+                    </div>
+                    <button type="submit" class="button">Enviar Mensagem</button>
+                    <div id="form-feedback" class="form__feedback"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">Nexus<span>Digital</span></a>
+                <p class="footer__description">Transformando ideias em experiências digitais memoráveis.</p>
+            </div>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class="ri-instagram-line"></i></a>
+                <a href="#" class="footer__icon"><i class="ri-linkedin-line"></i></a>
+                <a href="#" class="footer__icon"><i class="ri-github-line"></i></a>
+            </div>
+        </div>
+        <p class="footer__copy">&#169; 2026 Nexus Digital. Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
